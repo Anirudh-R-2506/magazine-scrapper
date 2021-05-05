@@ -19,7 +19,7 @@ function url_not_exists($url) {
 }
 function bakthi_sup(){
 
-    $today = '2021-04-29';#date('Y-m-d');
+    $today =  date('Y-m-d');
 
     function save_pages2($date,$link,$type){    
         mkdir('bakthi_supplement/links/'.$date,0755,true);
@@ -81,8 +81,6 @@ while(1){
 save_pages2($today,$img,'img');
 save_pages2($today,$svg,'svg');
 }
-#file_put_contents('bakthi/cover.jpg',file_get_contents('https://www.kumudam.com/magazine/Bakthi/'.$today.'/files/assets/cover300.jpg?uni=47e698ba4850f09cd7aa3b9d9a4c01d4'));
-
 
 
 function deepam(){
